@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Demo</title>
+</head>
+<body>
+    <h1>2FA Demo</h1>
+    <p>Scan the QR code below with your authenticator app: </p>
+    <img src="<%= qrCodeImage %>" alt=""> <br>
+    <p><a href="/">Refresh</a></p>
+    <form action="/verify" method="POST">
+        <label for="otp">Enter OTP</label>
+        <input type="text" name="token" id="token" required>
+        <input type="hidden" name="secret" value="<%= secret %>">
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>

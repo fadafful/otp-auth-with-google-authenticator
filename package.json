@@ -1,0 +1,23 @@
+{
+  "name": "otp-auth-with-google-authenticator",
+  "version": "1.0.0",
+  "description": "In this project, you'll practice using otplib to do 2FA Authentication with QrCode and Google Authenticator",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "otplib": "^12.0.1",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1"
+  }
+}
