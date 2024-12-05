@@ -20,6 +20,7 @@ npm install otplib --save
 Let's get started:
 1. npm init -y
 2. npm install express ejs
-3. npm install otplib --save
-4. create your app.js
-5. Also added a bit of Playwright for testing of a heading, link and title
+3. npm install otplib
+4. npm install qrcode
+5. create your app.js
+6. Also added a bit of Playwright for testing of a heading, link and title

@@ -10,9 +10,9 @@ const publicDirectory = path.join(__dirname, 'public');
 const generateSecret = () => authenticator.generateSecret();
 
 // Generate a QR code for the user
-const generateQRCode = async secret => {
+const generateQRCode = async (secret, email = 'fadafful@gmail.com') => {
     try {
-        const otpAuthUrl = authenticator.keyuri('fadafful@gmail.com', 'Auth App', secret);
+        const otpAuthUrl = authenticator.keyuri(email, 'Auth App', secret);
         const qrCode = await qrcode.toDataURL(otpAuthUrl);
 
         // save the image to the public folder
